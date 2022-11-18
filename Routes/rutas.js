@@ -14,8 +14,8 @@ rutasPersonalizadas.get('/hotelescris/habitacion/:idHabitacion',controladorHabit
 rutasPersonalizadas.post('/hotelescris/habitacion',controladorHabitacion.registrarHabitacion)
 rutasPersonalizadas.put('/hotelescris/habitacion/:idHabitacion',controladorHabitacion.editarHabitacion)
 rutasPersonalizadas.get('/hotelescris/reservas', controladorReserva.buscarReservas)
-rutasPersonalizadas.get('/hotelescris/reserva/:idHabitacion',controladorReserva.buscarReservaPorId)
+rutasPersonalizadas.get('/hotelescris/reserva/:idReserva',controladorReserva.buscarReservaPorId)
 rutasPersonalizadas.post('/hotelescris/reserva',controladorReserva.registrarReserva)
-rutasPersonalizadas.put('/hotelescris/reserva/:idHabitacion',controladorReserva.editarReserva)
+rutasPersonalizadas.put('/hotelescris/reserva/:idReserva',controladorReserva.editarReserva)
 
 

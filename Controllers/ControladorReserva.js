@@ -29,7 +29,7 @@ export class ControladorReserva{
     }
 
     async buscarReservaPorId(request,response){
-        let id=request.params.nroReserva //recibo id de la peticion
+        let id=request.params.idReserva //recibo id de la peticion
         let objetoServicioReservas=new ServicioReserva()
         try{
 
@@ -70,7 +70,7 @@ export class ControladorReserva{
 
     async editarReserva(request,response){
 
-        let id = request.params.nroReserva
+        let id = request.params.idReserva
         let datosReserva = request.body
 
         let objetoServicioReservas=new ServicioReserva()
